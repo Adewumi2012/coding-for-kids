@@ -1,0 +1,362 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    padding: 6px 80px 6px 80px;
+    position: fixed;
+    width: 100%;
+    max-width: 1110px;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.logo h1{
+    width: 40px;
+    height: 40px;
+    color: brown;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    text-decoration: none;
+    color:brown;
+}
+.hero{
+    background-image: linear-gradient(#00000089, #00000089), url('/images/1.jpg');
+    height: 740px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    padding: 18% 10% 1% 10%;
+    color: white;
+}
+
+
+.hero-text h1{
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 80px;
+}
+
+.hero-text p{
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero button{
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(222, 219, 56, 0.76);
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero button:hover {
+    background-color: brown;
+    color: yellow;
+    transition: 0.5s ease-in-out;
+}
+/*END OF HERO SESSION*/
+
+/* ABOUT US SECTION*/
+.about {
+    padding: 100px 80px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img{
+    width: 600px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.about-text h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.about-text button {
+    padding: 15px 30px;
+    border: blue;
+    outline: none;
+    border-radius: 50px;
+    color: rgba(18, 18, 2, 0.88);
+    background-color: yellow;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.about-text button:hover {
+    color:yellow;
+    background-color: brown;
+    transition: 0.5s ease-in-out;
+}
+/* END OF ABOUT SECTION */
+
+/* COURSES SECTION */
+.course {
+    padding: 100px 80px;
+}
+
+.course h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.course-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.course-item {
+    width: 30%;
+    border: 1px solid #d9d8d8;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+/* .course-item:hover {
+    transition: 0.5s ease-in-out;
+    transition: all;} */
+
+
+.course-item img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.course-text {
+    margin: 0;
+    padding: 20px;
+}
+
+.course-item a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: brown;
+}
+
+.course-item a:hover {
+    border-bottom: 1px solid brown;
+    transition: 1s ease-in-out;
+}
+
+.course-text h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* END OF COURSE LIST */
+
+.contact {
+    padding:50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address label {
+    font-size: 20px;
+    margin: 30px 0 10px 0; 
+}
+
+.address textarea {
+    outline: none;
+    border: 1px solid #d9d8d8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.field label {
+    font-size: 20px;
+}
+
+.field input {
+    outline: none;
+    border: 1px solid #d9d8d8; 
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px; 
+}
+
+.field select {
+    outline: none;
+    border: 1px solid #d9d8d8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.btn button {
+    background-color: yellow;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    margin-top: 30px;
+    width:100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ footer{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    background-color: black;
+    color: white;
+    padding: 40px 80px;
+    justify-content: space-between;
+    align-items: start;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+}
+.foot p {
+    margin: 0;
+    font-size: 12px;
+}
+.foot-logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.foot-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.foot-logo h3 {
+    color: white;
+    font-size: 28px;
+}
+.links {
+    display: flex;
+    gap: 50px;
+}
+.links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+}
+.links ul p {
+    color: yellow;
+}
+.links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.links ul li a:hover {
+    border-bottom: 1px solid yellow;
+}
+.email {
+    display: flex;
+}
+.email input {
+    outline: none;
+    border: 1px solid white;
+    padding: 10px 40px 10px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Trebuchet MS';
+    width: 200px;
+}
+.email button {
+    background-color: yellow;
+    outline: none;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: brown;
+    cursor: pointer;
+}
+
+
